@@ -17,13 +17,12 @@ $ docker run \
     -p 8080:80 \
     -e BASIC_AUTH_USERNAME=username \
     -e BASIC_AUTH_PASSWORD=password \
-    -e PROXY_PASS=https://www.google.com \
-    -e SERVER_NAME=proxy.dtan4.net \
+    -e PROXY_PASS=https://www.website-with-basic-auth.com \
     -e PORT=80 \
     gcoupelant/nginx-basic-auth-proxy
 ```
 
-Access to http://localhost:8080, then browser wont' ask you username and password.
+Access to http://localhost:8080, then browser won't ask you username and password.
 
 ## Environment variables
 
